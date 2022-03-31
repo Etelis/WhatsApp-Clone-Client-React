@@ -1,0 +1,83 @@
+.chat {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+.chat__header {
+  display: flex;
+  margin-top: 10px;
+  padding: 25px;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 15px;
+  margin-top: -5px;
+}
+
+.chat__headerInfo > p {
+  margin-top: -20px;
+  color: gray;
+}
+.chat__body{
+  flex: 1;
+  background-image: url("https://w0.peakpx.com/wallpaper/154/372/HD-wallpaper-telegram-background-whatsapp-creative-android-pattern-texture-abstract.jpg");
+  overflow: auto;
+  padding: 40px;
+}
+
+.chat__message{
+  box-shadow: -1px 2px 10px -3px rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.chat__name{
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  font-size: x-small;
+  font-weight: 700;
+}
+
+.time__stamp{
+  margin-left: 10px;
+  font-size: x-small;
+}
+
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.chat__footerIcons > .MuiSvgIcon-root{
+  color: gray;
+  padding: 3px;
+}
+
+.chat__footer > form{
+  flex: 1;
+  display: flex;
+}
+
+.chat__footer > form > input{
+  flex: 1;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.chat__footer > form > button {
+  display: none;
+}
