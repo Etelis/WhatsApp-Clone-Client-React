@@ -78,7 +78,8 @@ function Chat() {
 			</div>
 			<div className="chat__footer">
 				<div className="chat__footerIcons">
-					<div onClick={() => setEmojis(!emojis)}>
+					<div onMouseEnter={() => setEmojis(true)}
+						 onMouseLeave={() => setEmojis(false)}>
 				   <div className='chat__footerEmoji'>
 				   {emojis === true && <Emoji />}
 				   {console.log(chosenEmoji)}
@@ -95,7 +96,7 @@ function Chat() {
 						placeholder="Type a message"
 						type="text"
 					/>
-					<button onClick={onEmojiClick} type="submit" />
+					<button onClick={sendMessage} type="submit" />
 				</form>
 				<MicRoundedIcon />
 			</div>

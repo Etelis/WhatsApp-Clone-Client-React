@@ -18,8 +18,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/rooms/:roomId" element={[<Sidebar />, <Chat />]} />
-            <Route path="/app" element={[<Sidebar />]} />
-            <Route path="/" element={<h1> Home Screen </h1>} />
+            <Route path="/" element={[<Sidebar />]} />
           </Routes>
         </Router>
         </div>
