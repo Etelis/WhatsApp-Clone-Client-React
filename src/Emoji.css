@@ -1,0 +1,9 @@
+.emoji-picker-react{
+    margin-top: -400px;
+    position: relative;
+}
+
+.emoji__selection{
+    padding: -2000px;
+    position: relative;
+}
