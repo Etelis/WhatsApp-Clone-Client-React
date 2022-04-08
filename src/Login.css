@@ -1,15 +1,170 @@
+@font-face {
+    font-family: catamaran;
+    src: url("./Catamaran-Regular.ttf");
+  }
+
 .login {
-    background-color: azure;
+    font-family: catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     height: 100vh;
     width: 100vw;
     display: grid;
     place-items: center;
+    background-image: url("background.jpg");
+    background-size:cover;
+    background-color: #cccccc;
 }
 
 .login__container{
-    padding: 100px;
+    display: flex;
+    color: white;
+    box-shadow: -1px 15px 10px -6px rgba(0, 0, 0, 0.75);
+    background-color: #3f3f40;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 784px;
+    min-height: 350px;
+}
+
+.login__QR{
+    border-left: 1.5px solid rgb(57, 55, 55);
+    position:relative;
+    display: block;
     text-align: center;
-    background-color: aliceblue;
-    border-radius: 10px;
-    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+    padding: 10px 0px 0px 20px;
+    left: 7%;
+}
+
+.login__formFooter > h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 7px 10px 0px 10px;
+  }
+
+.login__formFooter > h4 {
+    max-width: 240px;
+    margin: 10px 0px 0px 0px;
+    font-weight: 300;
+    color: #B9BBBE;
+  }
+
+.login__QR > h5 {
+    position: relative;
+    right: 5%;
+    top: 5%;
+    max-width: 240px;
+    margin: 10px 0px 0px 0px;
+    font-weight: 300;
+    color: #B9BBBE;
+  }
+
+.login__QR > #googleIcon{
+    position: relative;
+    left: 25%;
+    bottom: 5%;
+    color: #B9BBBE;
+}
+
+.boldDescription {
+    font-weight: 700;
+  }
+
+.login__QR > img {
+    box-shadow: -1px 7px 10px -6px rgba(0, 0, 0, 0.75);
+    width: 160px;
+    height: 160px;
+    border-radius: 9px;
+    background: #fff;
+    display: inline-block;
+    padding: 3px;
+}
+
+.login__form{
+    flex:0.6;
+    flex-direction: column;
+    display: flex;
+}
+
+.login__formHeader{
+    position: relative;
+    flex: 0.2;
+    top: -5px;
+    text-align: center;
+    
+}
+
+.login__formHeader > h4 {
+    position:relative;
+    top: -35px;
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #B9BBBE;
+  }
+
+.login__formHeader > h3 {
+    font-size: 28px;
+    font-weight: 900;
+    padding-bottom: 10px;
+  }
+
+
+.login__formBody{
+    flex: 0.4;
+    
+}
+
+.login__formBodyEmail{
+    position: relative;
+    bottom: 40%;
+}
+
+.login__formBodyPassword{
+    position: relative;
+    bottom: 30%;
+}
+
+label {
+    outline: none;
+    display: inline-block;
+    color: rgb(185, 187, 190);
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+input {
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    background-color: #303338;
+    border: 1px solid black;
+    color: #dcddde;
+    outline: none;
+  }
+
+.login__formFooter{
+    flex:0.2;
+    position: relative;
+    bottom: 0%;
+}
+
+.login__formFooter > h4 > .boldLink{
+  color: rgb(147, 228, 255);
+}
+
+.login__formFooter > .button {
+    position: relative;
+    bottom: 35px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    height: 40px;
+}
+
+.login__QR{
+    flex:0.3;
 }

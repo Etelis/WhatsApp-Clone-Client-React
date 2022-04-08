@@ -1,11 +1,15 @@
 .app {
   display: grid;
   place-items: center;
-  background-color: #181818;
+  background-image: url("starry_night_192398.jpg");
+  top: 20px;
   height: 100vh;
 }
 
 .app_body {
+  opacity: 0.98;
+  position: relative;
+  top: 20px;
   display: flex;
   background-color: #212121;
   margin-top: -50px;

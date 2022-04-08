@@ -2,9 +2,6 @@
   flex: 0.8;
   display: flex;
   flex-direction: column;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(90,90,90,0) transparent;
-  overflow-y:scroll;
   border-left: 2px solid rgb(57, 55, 55);
 }
 .chat__header {
@@ -49,6 +46,9 @@ color: white;
 }
 .chat__body{
   flex: 1;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(90,90,90,0) transparent;
+  overflow-y:scroll;
   background-image: url("../public/backscreen.png");
   overflow: auto;
   padding: 40px;
@@ -98,6 +98,10 @@ color: white;
   padding-left: 10px;
 }
 
+.chat__footerIcons{
+  display: flex;
+}
+
 .chat__footerIcons > .MuiSvgIcon-root{
   color: gray;
   padding: 3px;
@@ -121,4 +125,25 @@ color: white;
 
 .chat__footer > form > button {
   display: none;
+}
+
+.emoji-picker-react{
+  margin-top: -330px;
+  position: absolute;
+}
+
+.emoji__selection{
+  position: absolute;
+}
+
+.attachmentMenu{
+  position: absolute;
+  bottom: 50px;
+  left: 21%;
+}
+.attachmentMenu > ul{
+  list-style-type: none;
+}
+.attachmentMenu > ul > li:not(:last-child) { 
+  margin-bottom: 1px;  
 }
