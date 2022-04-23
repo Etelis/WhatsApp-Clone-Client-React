@@ -12,7 +12,7 @@ A full working React client for a WhatsApp clone written in latest versions of:
 * [Firebase](https://firebase.google.com/)
 * [React Router](https://reactrouter.com/docs/en/v6)
 
-This project was made after trying to replicate the work of [Youtube Tuturial](https://www.youtube.com/watch?v=pUxrDcITyjg)
+This project was made after trying to replicate the work of [Youtube Tutorial](https://www.youtube.com/watch?v=pUxrDcITyjg)
 As I was trying to implement according to the video I came across alot of command miscompatibility due to firebase recent upgrade MIU upgrade and react-router-dom upgrade.
 
 After figuring out how to solve the compatibility issues I thought it would be a great practice for people trying to implement it themselves.
